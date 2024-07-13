@@ -1,0 +1,22 @@
+Web Nasıl Çalışır ?
+
+- Client dediğimiz (bizler veya istek yapan bir makine) istemciler, sunucularda duran apilere istek gönderirler. İsteklerini URL ile iletirler.
+- Url'ler içerisinde protokol, domain adresi ve kaynak (resource) alır. Domain adresleri aslında istek yaptığımız sunucuda var olan api'nin adresidir.
+- Daha akılda kalıcı olması için bunlar insan diline yakın www.google.com gibi domain adresleri ile yönlendirme yapabilirler. Aslında sadece birer sayıdan oluşurlar.
+- Bu domain adresleri DNS dediğimiz domain name server tarafından çözülür.
+- Gerçek adres çözündükten sonra TCP/IP socket bağlantısı kurulur ve gerçekten artık sunucuya bağlanmış oluruz.
+
+TCP / IP Nedir? (İletim Kontrol Protokolü ve İnternet Protokolü)
+
+- Kabaca ikisde protokoldur. Bu protokoller internette nasıl dolaşacağımızı belirlerler.
+- Daha sonra ayrınıtısına ineceğiz...
+
+HTTP Nedir? (Hyper Text Transform Protokol)
+
+- Aslında Http'de bir protokoldür. Sunucuya nasıl istek atılacağı hakkında bir takım kurallar ve yöntemler içerir.
+- Request mesajında, Gönderim Yöntemi (GET, POST vb.), İstek Hedefi ve HTTP versionu bulunur. Ayrıca içinde İsteğin Headers'ı ve Body'si bulunur.
+- HTTP ve HTTPS arasında güvenlik ve şifreleme farkı vardır.
+
+NodeJs Behind Scene
+
+- Node.js'in kalpi event-loop'tur.

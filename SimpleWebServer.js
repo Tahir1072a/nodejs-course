@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
     //   if (err) res.end(err.message);
     //   // Json dosyaları sadece stringtir. JSON.parse metodu bu string veriyi javascript objesine dönüştürür.
     //   const productData = JSON.parse(data);
-    //   // TODO: Kurs dakika 10'dan itibaren devam edecektir.
+    //
     //   res.writeHead(200, {
     //     "Content-type": "application/json",
     //   });
