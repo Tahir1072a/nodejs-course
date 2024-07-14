@@ -1,6 +1,8 @@
 const fs = require("fs");
 const crypto = require("crypto");
 
+// NOTE: Thread sayısı linux tabanlı sistemlerde olduğu gibi kolayca değiştirilemez.
+
 const start = Date.now();
 
 // 0 saniye sonra fire (ateşlenecek, gerçekleştirilecek, çağrılacak) olacak fonksiyon çağrısı.
